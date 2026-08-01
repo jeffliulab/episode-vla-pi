@@ -27,8 +27,11 @@ Jeff 的具身智能学习仓：Episode1 机械臂的 VLA 实战（遥操、数�
 
 ## 怎么跑起来
 
+⚠️ **所有命令都从本仓根目录执行**——路径都是相对的（数据集/产物写进本仓的 `datasets/`、
+`outputs/`，环境在同级的 `../lerobot_robot_episode1/`）。换目录跑会找不到东西。
+
 ```bash
-source ~/2026-summer-career-projects/lerobot_robot_episode1/.venv/bin/activate
+source ../lerobot_robot_episode1/.venv/bin/activate
 episode1-doctor        # 硬件自检,全绿才往下
 ```
 

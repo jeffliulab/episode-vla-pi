@@ -30,8 +30,11 @@ VLA 模型没有现成数据——要靠遥操作一条一条采出来。本仓�
 
 ## 快速上手
 
+所有命令都从本仓根目录执行——路径都是相对的：数据集与产物落在本仓，
+运行环境在同级的 `../lerobot_robot_episode1/`。
+
 ```bash
-source ~/2026-summer-career-projects/lerobot_robot_episode1/.venv/bin/activate
+source ../lerobot_robot_episode1/.venv/bin/activate
 episode1-doctor    # 永远先自检
 ```
 

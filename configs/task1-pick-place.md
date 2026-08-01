@@ -13,7 +13,7 @@
 ## 1. 数据采集（教程 §2.1）
 
 ```bash
-source ~/2026-summer-career-projects/lerobot_robot_episode1/.venv/bin/activate
+source ../lerobot_robot_episode1/.venv/bin/activate
 
 lerobot-record \
     --robot.type=episode1_follower --robot.id=episode1_follower \
@@ -45,7 +45,7 @@ lerobot-record \
 ## 2. 弧度 → 角度（教程 §2.3，ACT/SmolVLA 用）
 
 ```bash
-python ~/2026-summer-career-projects/lerobot_robot_episode1/scripts/convert_radians_to_degrees.py \
+python ../lerobot_robot_episode1/scripts/convert_radians_to_degrees.py \
     --source-repo-id=jeff/task1_pick_place \
     --source-dataset-root=datasets/task1_pick_place \
     --target-repo-id=jeff/task1_pick_place_degrees \
@@ -65,7 +65,7 @@ ACT（官方 train，教程参数：batch_size=32、num_workers=8、steps=200000
 
 ```bash
 tsp -L task1-act bash -c '
-source ~/2026-summer-career-projects/lerobot_robot_episode1/.venv/bin/activate
+source ../lerobot_robot_episode1/.venv/bin/activate
 lerobot-train \
     --dataset.repo_id=jeff/task1_pick_place_degrees \
     --dataset.root='"$PWD"'/datasets/task1_pick_place_degrees \

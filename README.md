@@ -35,8 +35,11 @@ speak LeRobot's language.
 
 ## Quick start
 
+Run everything from this repo's root — paths are relative: datasets and outputs land in
+this repo, and the environment lives in the sibling `../lerobot_robot_episode1/`.
+
 ```bash
-source ~/2026-summer-career-projects/lerobot_robot_episode1/.venv/bin/activate
+source ../lerobot_robot_episode1/.venv/bin/activate
 episode1-doctor    # hardware self-check first, always
 ```
 

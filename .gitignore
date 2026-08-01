@@ -16,3 +16,8 @@ __pycache__/
 
 # 运行产物
 *.log
+
+# 临时物与运行残渣
+temp/
+MUJOCO_LOG.TXT
+node_modules/
