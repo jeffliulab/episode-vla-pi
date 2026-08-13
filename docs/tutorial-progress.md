@@ -14,8 +14,8 @@
 | 2.4 | 单臂遥操系统校准、测试 | 🔵 进行中 | 见下表 |
 | 2.5 | 双臂校准 | ⏭️ 跳过（只有一台主臂） | — |
 | 2.6 / 2.7 | ACT / Pi0 原理 | ✅ 已读 | — |
-| 2.8 | 任务一：单臂抓取放置 | ⏳ | [../configs/task1-pick-place.md](../configs/task1-pick-place.md) |
-| 2.9 | 任务二：单臂开关抽屉 | ⏳ | 同 2.8 管线（届时新建 configs/task2-drawer.md） |
+| 2.8 | 任务一：单臂抓取放置 | ⏳ | [../tasks/t01-pick-place/TASK.md](../tasks/t01-pick-place/TASK.md) |
+| 2.9 | 任务二：单臂开关抽屉 | ⏳ | 同 2.8 管线（届时按 `tasks/README.md` 新建 `tasks/t02-drawer/`） |
 | 2.10 | 任务三：双臂倒水 | ⏭️ 跳过 | — |
 
 ## 2.4 逐步对照（教程命令 → 本仓命令）

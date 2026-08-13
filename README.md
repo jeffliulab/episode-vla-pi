@@ -24,10 +24,15 @@ speak LeRobot's language.
 
 ## Key features
 
-- **Task configs, not chat history**: each task's record / convert / train / rollout commands
-  live in `configs/`, with parameter provenance and safety notes.
-- **Experiment ledger**: `docs/experiments.md` records every run — data volume, training
-  params, outcome, artifacts.
+- **One folder per task**: `tasks/<slug>/` holds the hand-written record — a task card
+  (`TASK.md`), a **photo of the physical setup** (`setup.jpg`), and a per-task log
+  (`runs.md`). Datasets and checkpoints stay out of it. See `tasks/README.md`.
+- **No duplication of LeRobot metadata**: fps, feature shapes, episode counts already live
+  in the dataset's `meta/`, and hyperparameters ship with the checkpoint. Task cards record
+  only what LeRobot cannot: physical setup, success criteria, failures, and the links
+  between a task, its recordings, its training runs, and its results.
+- **Experiment ledger**: `docs/experiments.md` records every run — outcome, artifacts,
+  conclusion.
 - **Component registry**: `docs/registry.md` maps the whole Episode stack — repos, ports,
   device nodes, hardware facts, and the vendor-server prerequisites.
 - **Progress tracking**: `docs/tutorial-progress.md` pairs each tutorial chapter with the
@@ -44,7 +49,7 @@ episode1-doctor    # hardware self-check first, always
 ```
 
 Then follow `docs/tutorial-progress.md` chapter by chapter; task commands (e.g.
-`configs/task1-pick-place.md`) are copy-paste ready once the placeholders are filled.
+`tasks/t01-pick-place/TASK.md` §6) are copy-paste ready once the placeholders are filled.
 
 Every command that powers or moves real hardware is run by a human operator; GPU training
 goes through the machine's `tsp` queue. See `AGENTS.md` for the full red lines.

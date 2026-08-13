@@ -70,4 +70,4 @@ Episode1 机械臂的完整软件栈，2026-07-07 起外置为独立的机器人
 
 离线站 http://127.0.0.1:7788（`$EPISODE_HOME/episode-tutorials/serve.sh` 起站）。
 逐章进度与本仓命令对照 → [tutorial-progress.md](tutorial-progress.md)。
-注意：教程第 2 章原文按「恩培魔改 fork」教学，**命令以本仓 configs/ 为准**（插件路线对照表见 tutorial-progress.md）。
+注意：教程第 2 章原文按「恩培魔改 fork」教学，**命令以本仓 `tasks/<slug>/TASK.md` 为准**（插件路线对照表见 tutorial-progress.md）。

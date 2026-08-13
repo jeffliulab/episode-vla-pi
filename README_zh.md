@@ -21,9 +21,13 @@ VLA 模型没有现成数据——要靠遥操作一条一条采出来。本仓�
 
 ## 关键特性
 
-- **任务配置进仓，不留聊天记录**：每个任务的采集 / 转换 / 训练 / 推理命令都在
-  `configs/`，带参数出处和安全注记。
-- **实验台账**：`docs/experiments.md` 记录每一轮——数据量、训练参数、结果、产物。
+- **一个任务一个目录**：`tasks/<slug>/` 只装人写的东西——任务卡 `TASK.md`、
+  **机位与摆放的实拍照** `setup.jpg`、本任务流水账 `runs.md`。数据集与权重不放进去。
+  约定见 `tasks/README.md`。
+- **不重复 LeRobot 已经记下的**：fps、feature 形状、集数在数据集的 `meta/` 里，
+  超参随 checkpoint 存盘。任务卡只写 LeRobot 记不下来的四样——**物理布置、成功判据、
+  失败记录、串联关系**（任务 → 哪批采集 → 哪个训练 → 什么结果）。
+- **实验台账**：`docs/experiments.md` 记录每一轮——结果、产物、结论。
 - **组件登记处**：`docs/registry.md` 是整个 Episode 栈的地图——仓、端口、设备节点、
   硬件事实、上位机前置要求。
 - **进度跟踪**：`docs/tutorial-progress.md` 把教程每一章对应到插件路线的确切命令。
@@ -39,7 +43,7 @@ episode1-doctor    # 永远先自检
 ```
 
 然后照 `docs/tutorial-progress.md` 逐章推进；任务命令（如
-`configs/task1-pick-place.md`）填好占位符即可直接复制执行。
+`tasks/t01-pick-place/TASK.md` 第 6 节）填好占位符即可直接复制执行。
 
 所有让真实硬件带电/运动的命令由人来执行；GPU 训练走本机 `tsp` 队列。完整红线见
 `AGENTS.md`。
