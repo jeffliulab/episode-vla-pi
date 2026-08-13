@@ -3,9 +3,10 @@
 > 本页是 episode 具身智能线所有组件的**单一登记处**：每个组件是什么、在哪、什么状态、真相源是谁。
 > 信息变了就改这里，别处只引用不复制。最后核对：2026-07-31。
 
-## 1. 硬件 infra：`~/episode-robot-dev-framework/`（=`$EPISODE_HOME`）
+## 1. 硬件 infra：`$EPISODE_HOME`（Episode1 开发套件仓）
 
-Episode1 机械臂的完整软件栈，2026-07-07 起外置为机器人 infra（私有仓，不在工作区）。
+Episode1 机械臂的完整软件栈，2026-07-07 起外置为独立的机器人 infra 仓（私有）。
+⛔ 路径一律走 `$EPISODE_HOME`（在 `~/.bashrc` 里定义，是这套件路径的唯一真值），别写死绝对路径。
 
 | 子目录 | 角色 | 状态 / 关键事实 |
 |---|---|---|
@@ -57,7 +58,7 @@ Episode1 机械臂的完整软件栈，2026-07-07 起外置为机器人 infra（
 | `/dev/pcanusb32` | 从臂 CAN | gui_server **或** ROS（互斥） |
 | `:8106` | gazebo-chess 世界服务 | open-chess-robot（下棋线） |
 | `:8110` | ROS 网页 teleop | episode-ros-ws |
-| `:3000` | ANIMA 网页 | anima-zero（下棋线） |
+| `:8100` | ANIMA 网页 | anima-zero（下棋线）。2026-08-05 从 `:3000` 迁来 |
 
 ## 6. 并行线（不是本仓的事，但常被问起）
 

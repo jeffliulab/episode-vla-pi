@@ -4,7 +4,7 @@
 
 Jeff 的具身智能学习仓：Episode1 机械臂的 VLA 实战（遥操、数据采集、ACT/SmolVLA/Pi0 训练与推理）
 的**任务配置、实验记录与学习笔记**。
-**不是**设备驱动（在 `lerobot_robot_episode1`），**不是**硬件 infra（在 `~/episode-robot-dev-framework/`），
+**不是**设备驱动（在 `lerobot_robot_episode1`），**不是**硬件 infra（在 `$EPISODE_HOME`，即 Episode1 开发套件仓），
 **不是**模型代码——策略训练全部用官方 lerobot 的能力。
 
 ## 任务 → 去哪查
@@ -16,7 +16,7 @@ Jeff 的具身智能学习仓：Episode1 机械臂的 VLA 实战（遥操、数�
 | 跑任务一的采集/训练 | `configs/task1-pick-place.md` |
 | 记/查实验 | `docs/experiments.md` |
 | 改设备行为（钳制/校准/协议） | `../lerobot_robot_episode1/`（别在本仓改） |
-| 查主臂舵机编号等硬件事实 | `~/episode-robot-dev-framework/episode-leader-arm/README.md` |
+| 查主臂舵机编号等硬件事实 | `$EPISODE_HOME/episode-leader-arm/README.md` |
 
 ## 目录地图
 

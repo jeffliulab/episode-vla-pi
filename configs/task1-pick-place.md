@@ -2,7 +2,7 @@
 
 > 目标：遥操从臂把物品（教程用杨桃）抓起放进盒子，采 100 集数据，训 ACT/SmolVLA，推理验证。
 > 参数出处：教程 2.8（http://127.0.0.1:7788/pages/2-8-task1-pick-place.html），命令已改写为插件路线。
-> ⚠️ 真机命令由 Jeff 亲手跑；GPU 训练走 `tsp` 队列（先读 `~/2026-summer-career-projects/GPU训练队列.md`）。
+> ⚠️ 真机命令由 Jeff 亲手跑；GPU 训练走本机的 `tsp` 单卡队列（排队规矩见所在工作区的 `CLAUDE.md`）。
 
 ## 0. 前置
 
