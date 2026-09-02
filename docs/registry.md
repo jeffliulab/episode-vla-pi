@@ -13,7 +13,7 @@ Episode1 机械臂的完整软件栈，2026-07-07 起外置为独立的机器人
 | `episode-driver/` | 从臂 CAN 驱动地基：PEAK 驱动源码+重编签名、厂商 Python SDK、标定工具、ROS 控制器源码 | ✅ 全链路已验证。CAN 设备 `/dev/pcanusb32`（PCAN-USB `0c72:000c`）；内核已 apt-mark hold |
 | `episode-server/` | 厂商上位机 `gui_server_uni`（V0.9.9.3）：运动学核心 + **TCP 服务器 `localhost:12345`** | ✅ lerobot follower 的唯一控臂通道。回零姿态在 `homing_config.json` |
 | `episode-ros-ws/` | ROS2 jazzy colcon 工作区（MoveIt + Gazebo + 网页 teleop :8110），=`$EPISODE_WS` | ✅ 8 包已过。与 lerobot 线是**平行/互斥**关系（同抢 CAN） |
-| `episode-tutorials/` | 离线教程站（git submodule → `jeffliulab/episode-tutorials`） | ✅ 本地起站：`./serve.sh` → http://127.0.0.1:7788 |
+| `$EPISODE1_DOCS/教程/` | 离线教程站（⭐ 2026-09-02 脱子模块、独立仓 `jeffliulab/episode-tutorials`，随整机档案走） | ✅ 本地起站：`./serve.sh` → http://127.0.0.1:7788 |
 | `episode-leader-arm/` | 主臂舵机工具（编号/读状态/验证映射），2026-07-30 建 | ✅ 编号任务已完成。⚠️ README 有过时残留（temp/ 旧路径、"脚本未编写"矛盾句），未入 git |
 
 ⛔ **CAN 互斥规则**：gui_server 与 ROS 控制器同一时刻只能开一个（独占 `/dev/pcanusb32`）。
@@ -53,7 +53,7 @@ Episode1 机械臂的完整软件栈，2026-07-07 起外置为独立的机器人
 | 端口/节点 | 用途 | 谁在用 |
 |---|---|---|
 | `localhost:12345` | 从臂 TCP API | gui_server_uni（lerobot follower 连它） |
-| `127.0.0.1:7788` | 教程站 | `episode-tutorials/serve.sh` |
+| `127.0.0.1:7788` | 教程站 | `$EPISODE1_DOCS/教程/serve.sh` |
 | `/dev/ttyACM0` | 主臂舵机总线 | episode1_leader |
 | `/dev/pcanusb32` | 从臂 CAN | gui_server **或** ROS（互斥） |
 | `:8106` | gazebo-chess 世界服务 | open-chess-robot（下棋线） |
@@ -68,6 +68,6 @@ Episode1 机械臂的完整软件栈，2026-07-07 起外置为独立的机器人
 
 ## 7. 教程站章节地图
 
-离线站 http://127.0.0.1:7788（`$EPISODE_HOME/episode-tutorials/serve.sh` 起站）。
+离线站 http://127.0.0.1:7788（`$EPISODE1_DOCS/教程/serve.sh` 起站）。
 逐章进度与本仓命令对照 → [tutorial-progress.md](tutorial-progress.md)。
 注意：教程第 2 章原文按「恩培魔改 fork」教学，**命令以本仓 `tasks/<slug>/TASK.md` 为准**（插件路线对照表见 tutorial-progress.md）。

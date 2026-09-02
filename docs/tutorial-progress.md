@@ -1,6 +1,6 @@
 # 教程进度与本仓命令对照
 
-> 教程 = 恩培《实战 VLA 具身智能》（离线站 http://127.0.0.1:7788，`$EPISODE_HOME/episode-tutorials/serve.sh` 起站）。
+> 教程 = 恩培《实战 VLA 具身智能》（离线站 http://127.0.0.1:7788，`$EPISODE1_DOCS/教程/serve.sh` 起站）。
 > 教程原文用恩培魔改 fork；**本仓一律走官方 lerobot + 插件包**，对照关系见下。
 > 状态更新到：2026-07-31。
 

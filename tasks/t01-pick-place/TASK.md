@@ -1,6 +1,6 @@
 # t01-pick-place · 单臂抓取放置
 
-> 对应教程 2.8（离线站 `$EPISODE_HOME/episode-tutorials/serve.sh` → http://127.0.0.1:7788/pages/2-8-task1-pick-place.html）。
+> 对应教程 2.8（离线站 `$EPISODE1_DOCS/教程/serve.sh` → http://127.0.0.1:7788/pages/2-8-task1-pick-place.html）。
 > 命令已从教程的恩培 fork 改写成「官方 lerobot + 插件包」路线。
 > ⚠️ **真机命令由 Jeff 亲手跑**；GPU 训练走本机 `tsp` 单卡队列。
 
